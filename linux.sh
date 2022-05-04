@@ -84,22 +84,22 @@ start_linux(){
     read num
     case $num in
     11)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/xncs.sh && chmod +x xncs.sh && bash xncs.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/xncs.sh && chmod +x xncs.sh && bash xncs.sh
         ;;
     12)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/bench.sh && chmod +x bench.sh && bash bench.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/bench.sh && chmod +x bench.sh && bash bench.sh
         ;;
     13)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/tools.sh && chmod +x tools.sh && bash tools.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools.sh && chmod +x tools.sh && bash tools.sh
         ;;
     14)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/lyzz.sh && chmod +x lyzz.sh && bash lyzz.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/lyzz.sh && chmod +x lyzz.sh && bash lyzz.sh
         ;;
     21)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/swap.sh && chmod +x swap.sh && bash swap.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/swap.sh && chmod +x swap.sh && bash swap.sh
         ;;
     22)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/dns.sh && chmod +x dns.sh && bash dns.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/dns.sh && chmod +x dns.sh && bash dns.sh
         ;;
     23)
         ${download} https://cdn.jsdelivr.net/gh/lmc999/RegionRestrictionCheck@main/check.sh && chmod +x check.sh && bash check.sh
@@ -108,22 +108,22 @@ start_linux(){
         ${download} https://cdn.jsdelivr.net/gh/ylx2016/Linux-NetSpeed@master/tcp.sh && chmod +x tcp.sh && bash tcp.sh
         ;;
     25)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/net-install.sh && chmod a+x net-install.sh && bash net-install.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/net-install.sh && chmod a+x net-install.sh && bash net-install.sh
         ;;
     31)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/frps.sh && chmod +x frps.sh && bash frps.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/frps.sh && chmod +x frps.sh && bash frps.sh
         ;;
     32)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/frpc.sh && chmod +x frpc.sh && bash frpc.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/frpc.sh && chmod +x frpc.sh && bash frpc.sh
         ;;
     33)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/nezha.sh && chmod +x nezha.sh && bash nezha.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/nezha.sh && chmod +x nezha.sh && bash nezha.sh
         ;;
     34)
         ${download} https://cdn.jsdelivr.net/gh/CokeMine/ServerStatus-Hotaru@master/status.sh && chmod +x status.sh && bash status.sh
         ;;
     35)
-        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/dkzf.sh && chmod +x dkzf.sh && bash dkzf.sh
+        ${download} https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/dkzf.sh && chmod +x dkzf.sh && bash dkzf.sh
         ;;
     99)
         echo -e "\n${GreenBG}感谢使用！欢迎下次使用！${Font}\n" && exit
