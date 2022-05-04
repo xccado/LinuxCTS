@@ -67,7 +67,7 @@ download_file(){
     rm -rf /root/frpc
     mkdir -p /root/frpc
     cd /root/frpc
-    wget --no-check-certificate https://raw.githubusercontent.com/xccado/LinuxCTS/main/frp/frp_${version}_linux_amd64.tar.gz
+    wget --no-check-certificate https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/frp/frp_${version}_linux_amd64.tar.gz
     tar -zxvf frp_${version}_linux_amd64.tar.gz
     mv frp_${version}_linux_amd64/frpc /root/frpc
     rm -fr frp_${version}_linux_amd64.tar.gz
@@ -147,7 +147,7 @@ update_file(){
     rm -rf /root/frpc
     mkdir -p /root/frpc
     cd /root/frpc
-    wget --no-check-certificate https://raw.githubusercontent.com/xccado/LinuxCTS/main/frp/frp_${version}_linux_amd64.tar.gz
+    wget --no-check-certificate https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/frp/frp_${version}_linux_amd64.tar.gz
     tar -zxvf frp_${version}_linux_amd64.tar.gz
     mv frp_${version}_linux_amd64/frpc /root/frpc
     mv /root/frpc.ini /root/frpc/frpc.ini
@@ -286,7 +286,7 @@ start_frpc(){
         systemctl status frpc
         ;;
     9)
-        curl -O -L https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/frps.sh && chmod +x frps.sh && bash frps.sh
+        curl -O -L https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/frps.sh && chmod +x frps.sh && bash frps.sh
         ;;
     10)
         echo -e "\n${GreenBG}感谢使用！欢迎下次使用！${Font}\n" && exit
