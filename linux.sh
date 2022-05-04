@@ -45,6 +45,8 @@ opsy=$( get_opsy )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 tram=$( free -m | awk '/Mem/ {print $2}' )
 uram=$( free -m | awk '/Mem/ {print $3}' )
+ipaddr=$(curl -s myip.ipip.net | awk -F ' ' '{print $2}' | awk -F '：' '{print $2}')
+ipdz=$(curl -s myip.ipip.net | awk -F '：' '{print $3}')
 
 #脚本菜单
 start_linux(){
@@ -56,6 +58,7 @@ start_linux(){
     echo -e "=                                                   ="
     echo -e "====================================================="
     echo -e "操作系统${Green} $opsy ${Font}CPU${Green} $cores ${Font}核 系统内存${Green} $tram ${Font}MB"
+    echo -e "IP地址${Green} $ipaddr $ipdz ${Font}"
     echo -e "====================================================="
     echo -e "=  ${Green}11${Font}  VPS信息和性能测试  VPS information test  "
     echo -e "=  ${Green}12${Font}  Bench系统性能测试  Bench performance test  "
