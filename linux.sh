@@ -63,6 +63,7 @@ start_linux(){
     echo -e "=  ${Green}11${Font}  VPS信息和性能测试  VPS information test  "
     echo -e "=  ${Green}12${Font}  Bench系统性能测试  Bench performance test  "
     echo -e "=  ${Green}13${Font}  Linux系统实用功能  Linux utility function  "
+    echo -e "=  ${Green}14${Font}  Linux路由追踪检测  Linux traceroute test  "
     echo -e "="
     echo -e "=  ${Green}21${Font}  Linux修改交换内存  Modify swap memory  "
     echo -e "=  ${Green}22${Font}  Linux修改服务器DNS  Modify server DNS  "
@@ -90,6 +91,9 @@ start_linux(){
         ;;
     13)
         ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/tools.sh && chmod +x tools.sh && bash tools.sh
+        ;;
+    14)
+        ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/lyzz.sh && chmod +x lyzz.sh && bash lyzz.sh
         ;;
     21)
         ${download} https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/swap.sh && chmod +x swap.sh && bash swap.sh
