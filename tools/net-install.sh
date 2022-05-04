@@ -38,7 +38,7 @@ else
     sleep 3s
 fi
 
-wget -N --no-check-certificate https://raw.githubusercontent.com/xccado/LinuxCTS/main/tools/core-install.sh && chmod a+x core-install.sh
+wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/tools/core-install.sh && chmod a+x core-install.sh
 
 echo "============================================================"
 echo "=                                                          ="
