@@ -74,7 +74,7 @@ Font="\033[0m"
         poweroff
         ;;
     14)
-        wget -N https://raw.githubusercontent.com/xccado/LinuxCTS/main/linux.sh && chmod +x linux.sh && bash linux.sh
+        wget -N https://cdn.jsdelivr.net/gh/xccado/LinuxCTS@master/linux.sh && chmod +x linux.sh && bash linux.sh
         ;;
     15)
         exit
